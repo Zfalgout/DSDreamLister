@@ -23,6 +23,8 @@
 		7688B34E1EE2686A00FA8803 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7688B34D1EE2686A00FA8803 /* MaterialView.swift */; };
 		7688B3501EE26A1A00FA8803 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7688B34F1EE26A1A00FA8803 /* ItemCell.swift */; };
 		7688B3521EE26B0200FA8803 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7688B3511EE26B0200FA8803 /* MainVC.swift */; };
+		7688B3551EE2E54A00FA8803 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7688B3541EE2E54A00FA8803 /* ItemDetailsVC.swift */; };
+		7688B3571EE2E77000FA8803 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7688B3561EE2E77000FA8803 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		7688B34D1EE2686A00FA8803 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		7688B34F1EE26A1A00FA8803 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		7688B3511EE26B0200FA8803 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		7688B3541EE2E54A00FA8803 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemDetailsVC.swift; path = ../ItemDetailsVC.swift; sourceTree = "<group>"; };
+		7688B3561EE2E77000FA8803 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,15 +80,16 @@
 		7688B3241EE25EE900FA8803 /* Dream Lister */ = {
 			isa = PBXGroup;
 			children = (
-				7688B34C1EE2685200FA8803 /* View */,
 				7688B34A1EE2634600FA8803 /* Model */,
+				7688B34C1EE2685200FA8803 /* View */,
+				7688B3531EE2E52500FA8803 /* Controller */,
 				7688B3251EE25EE900FA8803 /* AppDelegate.swift */,
 				7688B3291EE25EE900FA8803 /* Main.storyboard */,
+				7688B34B1EE2634B00FA8803 /* Generated */,
 				7688B32F1EE25EE900FA8803 /* Assets.xcassets */,
 				7688B3311EE25EE900FA8803 /* LaunchScreen.storyboard */,
 				7688B3341EE25EE900FA8803 /* Info.plist */,
 				7688B32C1EE25EE900FA8803 /* Dream_Lister.xcdatamodeld */,
-				7688B3511EE26B0200FA8803 /* MainVC.swift */,
 			);
 			path = "Dream Lister";
 			sourceTree = "<group>";
@@ -96,7 +101,6 @@
 				7688B33C1EE2633E00FA8803 /* Store+CoreDataClass.swift */,
 				7688B33E1EE2633E00FA8803 /* Image+CoreDataClass.swift */,
 				7688B3401EE2633E00FA8803 /* Item+CoreDataClass.swift */,
-				7688B34B1EE2634B00FA8803 /* Generated */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -115,10 +119,20 @@
 		7688B34C1EE2685200FA8803 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7688B3561EE2E77000FA8803 /* CustomTextField.swift */,
 				7688B34D1EE2686A00FA8803 /* MaterialView.swift */,
 				7688B34F1EE26A1A00FA8803 /* ItemCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		7688B3531EE2E52500FA8803 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7688B3541EE2E54A00FA8803 /* ItemDetailsVC.swift */,
+				7688B3511EE26B0200FA8803 /* MainVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,11 +215,13 @@
 				7688B3441EE2633E00FA8803 /* Store+CoreDataClass.swift in Sources */,
 				7688B3431EE2633E00FA8803 /* ItemType+CoreDataProperties.swift in Sources */,
 				7688B3461EE2633E00FA8803 /* Image+CoreDataClass.swift in Sources */,
+				7688B3551EE2E54A00FA8803 /* ItemDetailsVC.swift in Sources */,
 				7688B3451EE2633E00FA8803 /* Store+CoreDataProperties.swift in Sources */,
 				7688B3261EE25EE900FA8803 /* AppDelegate.swift in Sources */,
 				7688B3491EE2633E00FA8803 /* Item+CoreDataProperties.swift in Sources */,
 				7688B32E1EE25EE900FA8803 /* Dream_Lister.xcdatamodeld in Sources */,
 				7688B3521EE26B0200FA8803 /* MainVC.swift in Sources */,
+				7688B3571EE2E77000FA8803 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
